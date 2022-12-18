@@ -1,8 +1,11 @@
 import './App.css';
+import Mainbox from './components/mainbox/Mainbox';
 
 function App() {
   return (
-   <><h1>start</h1></>
+   <>
+   <Mainbox/>
+   </>
   );
 }
 
