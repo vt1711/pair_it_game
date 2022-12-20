@@ -1,5 +1,5 @@
 .imageboxdiv{
-    background-color: rgb(21, 1, 70);
+    background-color: rgb(35, 18, 77);
     height: max-content;
     padding: 2rem;
     width: max-content;
@@ -7,13 +7,17 @@
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    border: solid 0.3rem rgb(0, 32, 78);
+    border: solid 0.3rem rgb(32, 5, 67);
     border-radius: 0.5rem;
-    
 }
+.svgdiv{
+    pointer-events: none;
+   opacity: 0;
 
+}
 .imageboxdiv:hover{
-    background-color: black;
+    border-radius: 50%;
+    
 }
 
 .laptop{
@@ -39,4 +43,56 @@
 }
 .error{
     color: red;
+}
+
+.firstclick{
+    border-color: grey;
+    opacity: 50%;
+    
+    pointer-events: none;
+
+}
+
+.paired{
+    border-color: rgb(98, 201, 47);
+    opacity: 100%;
+    
+    
+    pointer-events: none;
+
+    
+}
+
+.errored{
+    border-color: grey;
+    
+    
+    pointer-events: none;
+
+    
+}
+
+.unpaired{
+    border-color: rgb(133, 6, 6);
+    pointer-events: none;
+    opacity: 100%;
+    
+    
+
+    
+}
+
+@keyframes svgvisible {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+
+    }
+}
+
+.svgvisible{
+    animation: svgvisible 0.3s linear 0s 4 normal forwards;
+
 }

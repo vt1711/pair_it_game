@@ -1,9 +1,8 @@
 .mainboxdiv{
     background-color: rgb(17, 4, 62);
     height: 30rem;
-    width: 50%;
+    width: 95%;
     display: flex;
-    margin: 3rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;

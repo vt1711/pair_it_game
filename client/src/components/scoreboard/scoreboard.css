@@ -1,0 +1,29 @@
+.scoreboarddiv{
+    background-color: rgb(12, 1, 47);
+    border: solid 0.4rem rgb(4, 4, 58);
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    color: rgb(173, 245, 245);
+}
+
+.scoreboardtitle{
+    /* background-color: rebeccapurple; */
+    width: 100%;
+   text-align: center;
+   font-size: 3rem;
+}
+
+.scorecount{
+   margin: 1rem 0 0 2rem;
+   font-size: 2rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.currentpoint{
+    margin: 0 1rem 0 0;
+}

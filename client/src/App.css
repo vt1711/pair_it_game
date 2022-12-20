@@ -1,0 +1,11 @@
+.gameareadiv{
+    width: 50%;
+    height: max-content;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 0 2rem;
+    margin:  0 0 0 25%;
+}
