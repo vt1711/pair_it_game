@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Imagebox from "../imagebox/Imagebox";
 import "./mainbox.css";
+import { useDispatch } from "react-redux";
+import { addpoint, subtractpoint, zeropoint } from "../../redux/actions/allActions";
 
 const Mainbox = () => {
+
+  const dispatch = useDispatch();
   const [clickcount, setclickcount] = useState(1);
   const [firstid, setfirstid] = useState("");
   const [var0, setvar0] = useState(null);
@@ -121,14 +125,14 @@ const Mainbox = () => {
   const checkmatch = (e) => {
     if (firstid === e.target.id) {
       console.log("yeyyy id match", firstid);
-      const firstelementclass =document.getElementById(firstid).classList[1];
+      const firstelementclass = document.getElementById(firstid).classList[1];
       document.getElementsByClassName(firstelementclass)[0].classList.remove("firstclick");
       document.getElementsByClassName(firstelementclass)[0].classList.add("paired");
-
-      document.getElementById(firstid).classList.remove("firstclick");
-      document.getElementById(firstid).classList.add("paired");
+      document.getElementsByClassName(firstelementclass)[1].classList.remove("firstclick");
+      document.getElementsByClassName(firstelementclass)[1].classList.add("paired");
       e.target.classList.add("paired");
       e.target.firstChild.classList.add("svgvisible");
+      dispatch(addpoint());
     } else {
       console.log("arre..id din match");
       const getfirstelementclass =
@@ -164,6 +168,7 @@ const Mainbox = () => {
       document
         .getElementsByClassName(getcurrentelementclass)[1]
         .firstChild.classList.add("svgvisible");
+      dispatch(zeropoint());
     }
     setclickcount(1);
   };
@@ -172,6 +177,7 @@ const Mainbox = () => {
     if (document.getElementById(e.target.id).classList[1] === "error") {
       e.target.classList.add("errored");
       e.target.firstChild.classList.add("svgvisible");
+      dispatch(subtractpoint());
     } else if (clickcount === 2) {
       checkmatch(e);
     } else {
@@ -190,7 +196,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var0}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -203,7 +209,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var1}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -216,7 +222,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var2}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -229,7 +235,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var3}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -242,7 +248,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var4}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -255,7 +261,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var5}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -268,7 +274,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var6}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -281,7 +287,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var7}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -294,7 +300,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var8}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -307,7 +313,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var9}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -320,7 +326,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var10}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -333,7 +339,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var11}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -346,7 +352,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var12}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -359,7 +365,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var13}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,
@@ -372,7 +378,7 @@ const Mainbox = () => {
         <Imagebox
           icontype={`${var14}`}
           onclick={(e) => {
-            
+
             console.log(
               "entered onclick",
               e.target.id,

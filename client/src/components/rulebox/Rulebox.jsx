@@ -14,6 +14,7 @@ const Rulebox = () => {
           <p>4. There are total 7 pairs and thus max score is 7.</p><br/>
           <p>5. There is one box with 404 code clicking it will lead to -1 point.</p><br/>
           <p>6. Thus minimum score is -1 (case where in player selects all wrong boxes and also selects error box).</p><br/>
+          <p>7. Refresh the page to restart the game.</p><br/>
           <NavLink to='/'>
           <IoCaretBack className='backbutton'/>
 
