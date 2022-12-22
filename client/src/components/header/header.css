@@ -1,12 +1,19 @@
-.gameareadiv{
-    width: 50%;
-    height: max-content;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin:  0 0 0 25%;
+.headerdiv {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  color: magenta;
+  padding: 2rem 4rem 0 5rem;
+}
+.gamelogo {
+  height: 4rem;
+}
+
+.infobutton {
+  color: rgb(224, 30, 137);
+  font-size: 1.3rem;
 }
 
 /* ................................................................................. */
@@ -17,8 +24,10 @@
 /* ................................................................................. */
 
 @media only screen and (max-width: 600px) {
-    .gameareadiv{
-        width: 100%;
-        margin:  0 0 0 0;
-    }
+  .headerdiv {
+    padding: 1.5rem 5rem 0 3rem;
+  }
+  .infobutton {
+    margin: 1.5rem 0 0 0;
+  }
 }

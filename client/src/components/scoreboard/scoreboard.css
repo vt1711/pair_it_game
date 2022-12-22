@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
 .scoreboarddiv{
     background-color: rgb(12, 1, 47);
     border: solid 0.4rem rgb(4, 4, 58);
@@ -8,18 +10,19 @@
     flex-direction: column;
     border-radius: 1rem;
     color: rgb(173, 245, 245);
+    font-family: 'Iceland', cursive;
 }
 
 .scoreboardtitle{
     /* background-color: rebeccapurple; */
     width: 100%;
    text-align: center;
-   font-size: 2rem;
+   font-size: 2.5rem;
 }
 
 .scorecount{
    margin: 1rem 0 0 2rem;
-   font-size: 1rem;
+   font-size: 1.3rem;
    display: flex;
    justify-content: space-between;
 }
@@ -28,6 +31,31 @@
     margin: 0 1rem 0 0;
 }
 #currentpoint,#totalscore{
-   font-size: 1.8rem;
+   font-size: 1.9rem;
    margin: 0 0 0 0.5rem;   
+}
+
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+
+@media only screen and (max-width: 600px) {
+    .scoreboarddiv{
+        align-items: center;
+    }
+    
+    .scoreboardtitle{
+        height: fit-content;
+        width: fit-content;
+    }
+    
+    .scorecount{
+       margin: 1rem 0 0 0;
+       flex-direction: column;
+       align-items: center;
+    }
+    
 }

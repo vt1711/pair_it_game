@@ -1,12 +1,29 @@
-.mainboxdiv{
-    background-color: rgb(17, 4, 62);
-    height: 30rem;
-    width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    border: solid 1rem;
-    border-radius: 2rem;
-    padding: 1rem;
+.mainboxdiv {
+  background-color: rgb(17, 4, 62);
+  height: 30rem;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+/* ................................................................................. */
+
+@media only screen and (max-width: 600px) {
+    .mainboxdiv {
+        height: max-content;
+        border: solid 0.3rem;
+        border-radius: 1rem;
+        padding: 0.5rem 0 0.5rem 0;
+        margin: 1rem 0 0 0;
+      }
 }

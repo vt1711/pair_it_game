@@ -1,24 +1,23 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import { HiInformationCircle } from "react-icons/hi";
-import "./ibutton.css"
-const Ibutton = () => {
+import "./header.css"
+import pairitlogo from '../../images/pairitlogo.png';
+const Header = () => {
     return (
         <>
-            <div className='ibuttondiv'>
+            <div className='headerdiv'>
 
+                <img className='gamelogo' src={pairitlogo} alt="pairitlogo" />
                 <NavLink
                     to="/gameinfo"
-                    className={({ isActive }) =>
-                        "navlinks" + (isActive ? " activenavlink " : "")
-                    }
                 >
                     <HiInformationCircle className='infobutton' />
-
                 </NavLink>
             </div>
+
         </>
     )
 }
 
-export default Ibutton
+export default Header
