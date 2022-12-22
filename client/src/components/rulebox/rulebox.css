@@ -20,11 +20,21 @@
     text-align: center;
     font-size: 5rem;
 }
-
+@keyframes backbuttonblink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  
 .backbutton{
     margin: 1rem 0 5rem 45%;
     font-size: 3rem;
-    color: rgb(77, 2, 121);
+    color: rgb(5, 137, 193);
+    animation: backbuttonblink 1s linear 0s infinite alternate forwards;
+    
      
 }
 
@@ -33,6 +43,7 @@
 }
 .minusonepoint{
     color: rgb(239, 59, 59)
+
     
 }
 .zeropoint{
