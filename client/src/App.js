@@ -4,6 +4,7 @@ import Rulebox from './components/rulebox/Rulebox';
 import Scoreboard from './components/scoreboard/Scoreboard';
 import { Route, Routes } from "react-router-dom";
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Scoreboard />
         </div>} />
       </Routes>
+      <Footer/>
 
 
 
