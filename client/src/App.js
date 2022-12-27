@@ -12,12 +12,13 @@ function App() {
       <Header />
       <Routes>
         <Route path="/gameinfo" element={<Rulebox />} />
-        <Route path="/" element={<div className='gameareadiv'>
+        <Route path="/" element={<><div className='gameareadiv'>
           <Mainbox />
           <Scoreboard />
-        </div>} />
+        </div>
+        <Footer />
+        </>} />
       </Routes>
-      <Footer/>
 
 
 
